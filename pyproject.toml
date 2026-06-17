@@ -33,6 +33,9 @@ dependencies = [
     "markdown-it-py>=3.0.0"
 ]
 
+[project.scripts]
+slackify-markdown = "slackify_markdown.cli:main"
+
 [project.urls]
 "Homepage" = "https://github.com/thesmallstar/slackify-markdown-python"
 "Bug Tracker" = "https://github.com/thesmallstar/slackify-markdown-python/issues"

@@ -10,8 +10,14 @@ This library converts regular Markdown to Slack-specific markdown, making it eas
 
 ## Installation
 
+**With pip**
 ```bash
 pip install slackify-markdown
+```
+
+**With uv**
+```bash
+uv add slackify-markdown
 ```
 
 ## Usage
@@ -52,6 +58,16 @@ This is *bold text* and this is _italic text_.
 
 <https://example.com|Link>
 """
+```
+
+## Command-line usage
+
+After installation, use the `slackify-markdown` command to convert a file or stdin:
+
+```bash
+slackify-markdown README.md
+slackify-markdown README.md --output README.slack.md
+cat README.md | slackify-markdown
 ```
 
 ## Features
